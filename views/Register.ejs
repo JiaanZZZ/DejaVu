@@ -1,0 +1,54 @@
+<%- include("partials/headerIn") -%>
+
+
+<div class="register">
+<div class="container mt-5">
+  <h1>Register</h1>
+
+
+
+  <div class="row">
+
+    <div class="col-sm-5">
+
+
+          <!-- Makes POST request to /register route -->
+          <form action="/register" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password">
+            </div>
+            <button type="submit" class="btn btn-dark">Register</button>
+          </form>
+
+
+  </div>
+
+    <div class="col-sm-7">
+
+
+        <div class="signin">
+          <h3>Sign   In   with</h3>
+
+
+                    <a class="footer-link-google" href="/auth/google"><i class="fab fa-google fa-2x"></i></a>
+                    <a class="footer-link-fb" href=""><i class="fab fa-facebook fa-2x"></i></a>
+                    <a class="footer-link-wc" href=""><i class="fab fa-weixin fa-2x"></i></a>
+        </div>
+
+      </div>
+
+
+  </div>
+</div>
+
+</div>
+
+
+
+
+<%- include("partials/footer") -%>

@@ -1,0 +1,86 @@
+<%- include("partials/headerOut") -%>
+
+
+
+<div class="container-table">
+
+    <!-- table -->
+    <section id="table">
+
+
+    <div class="table-layout">
+      <div class="table-layout-header">
+        <h1>All the words</h1>
+      </div>
+      <form class="table-form" action="/allthevocab" method="post">
+
+    <table class="table table-hover" style="table-layout: fixed; width: 100%">
+  <thead>
+
+
+    <%# header %>
+    <tr>
+      <th scope="col">#</th>
+      <th class ="mark-col" scope="col">Mark</th>
+      <th class = "word-col" scope="col">Word</th>
+      <th class = "class-col" scope="col">Class</th>
+      <th class = "definition-col" scope="col">Definition</th>
+      <th class = "example-col" scope="col">Example</th>
+      <th class = "action-col" scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+
+    <%# display words %>
+      <%var i=1;%>
+      <% allWords.forEach(function(allWord) { %>
+        <tr>
+          <td scope="col"><%=i%> </td>
+            <%i=i+1%>
+          <td class ="mark-col-input" scope="col"><input class="cb form-check-input me-1" type="checkbox"></td>
+          <td class ="word-col-input" scope="col" ><%=allWord.name%></td>
+          <td class ="class-col-input" scope="col" ><%=allWord.class%></td>
+          <td class ="definition-col-input" scope="col" ><%=allWord.definition%></td>
+          <td class ="example-col-input" scope="col" ><%=allWord.example%></td>
+          <td>
+
+            <a class="edit" href="#" data-bs-toggle="tooltip" data-placement="top" title="edit" id="Edit"><i class="fas fa-pen-fancy fa-lg"></i></a>
+            <a class="delete" href="#"data-bs-toggle="tooltip" title="delete" id="Delete"><i class="fas fa-trash fa-lg"></i></a>
+            <script src="tt.js"></script>
+          </td>
+        </tr>
+          <% }); %>
+
+
+          <%# Add words %>
+        <tr>
+          <td scope="col"></td>
+          <td class ="mark-col-new" scope="col"></td>
+          <td class ="word-col-new" scope="col" >
+            <input type="text" class="form-control" placeholder="word"  name="newWord" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          </td>
+          <td class ="class-col-new" scope="col" >
+            <input type="text" placeholder="class" class="form-control" name="newClass"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          </td>
+          <td class ="definition-col-new" scope="col" >
+            <input type="text" placeholder="definition"  class="form-control" name="newDefinition" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          </td>
+          <td class ="example-col-new" scope="col" >
+            <input type="text" placeholder="example" class="form-control" name="newExample" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          </td>
+          <td class ="action-col-new" scope="col" >
+            <button class="btn btn-dark " type="submit" name="button">+ Add </button></td>
+        </tr>
+
+
+
+  </tbody>
+</table>
+</div>
+</div>
+
+
+</form>
+<%- include("partials/footer") -%>

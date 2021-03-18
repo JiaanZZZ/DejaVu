@@ -1,0 +1,199 @@
+
+.DejaVu{
+  text-align: center;
+  position: relative;
+  font-family: 'Unkempt', cursive;
+  font-size: 220px;
+  width: 50%;
+  top:20%;
+  right: 25%;
+  left:23%;
+  margin: 30px 40px 60px 40px;
+}
+.log-reg{
+  text-align: center;
+  position: relative;
+  top:20%;
+  left:37%;
+
+}
+
+.log-reg a{
+margin:10px 20px;
+
+}
+
+.initial-reg{
+  color: black;
+
+
+}
+
+.initial-log{
+  color:black;
+
+}
+
+.table-layout{
+  position: relative;
+  top:50%;
+  width: 82%;
+  left:9%;
+  bottom: 30%;
+  margin-top:10%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.collection-homepage{
+  text-align: center;
+  vertical-align: center;
+  width: 50%;
+  left: 25%;
+  right:25%;
+  top:20%;
+  bottom: 25%;
+  margin-bottom: 10%;
+  font-size: 80px;
+  padding: 10px 15px;
+}
+
+.existing-collection{
+  margin-left: 42%;
+}
+
+.add-item-collection{
+  margin: 2px 0px 20px 0px;
+}
+
+#first-collection{
+  color:black;
+}
+
+#second-collection{
+  color:black;
+}
+
+#third-collection{
+  color:black;
+}
+
+#fourth-collection{
+  color:black;
+}
+
+
+
+
+body, html { /*body and html have to be 100% to push header down */
+    height:100%;
+    width: 100%;
+    margin:0;
+}
+
+h1{
+    margin:50px 20px 35px 0px;
+}
+h3{
+  margin:0px 20px 40px 20px;
+}
+
+
+.cb{
+  position: relative;
+  left:2%;
+  right:35%;
+  top:0.5%;
+  margin:0;
+  text-align: center;
+  vertical-align: middle;
+
+
+}
+.mark-col{
+  height: 10px;
+  width: 10%;
+  text-align: center;
+
+}
+
+.word-col{
+  height: 10px;
+  width: 10%;
+
+}
+.class-col{
+  height: 10px;
+  width: 8%;
+
+}
+.definition-col{
+  height: 10px;
+  width: 23%;
+
+}
+.example-col{
+  height: 10px;
+  width: 41%;
+
+}
+.action-col{
+  height: 10px;
+  width: 8%;
+
+}
+.edit{
+  margin: 5px;
+  color:#101820;
+}
+
+.delete{
+  margin: 5px;
+  color:#1a7a4c;
+}
+
+.footer-link-google{
+  margin: 30px;
+  color:#DB4437;
+}
+.footer-link-fb{
+  margin: 30px;
+  color:#3b5998;
+}
+.footer-link-wc{
+  margin: 30px;
+  color:#7bb32e;
+}
+.register{
+  margin-top: 12%;
+  margin-right: 0;
+  margin-left: 12%;
+}
+
+.login{
+  margin-top: 12%;
+  margin-right: 0;
+  margin-left: 12%;
+}
+
+
+.signin{
+  text-align: center;
+}
+.table-layout-header{
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.footer{
+  margin: 10.5% 15% 0% 15%;
+  text-align: center;
+  padding: 10% 15% 1%;
+}
+
+
+
+.add-btn{
+
+  margin:50px 20px ;
+}
